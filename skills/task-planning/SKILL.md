@@ -1,6 +1,6 @@
 ---
 name: task-planning
-description: Elabora, com base na inspeção do código, um plano curto antes da implementação, cobrindo objetivo, arquivos afetados, passos, riscos, dúvidas e forma de validação. Use quando o usuário pedir um plano ou abordagem, ou antes de tarefas com várias etapas, vários arquivos ou risco de quebra. Não implementa.
+description: Elabora, com base na inspeção do código, um plano curto antes da implementação, cobrindo objetivo, arquivos afetados, passos, riscos, dúvidas e forma de validação. Use quando o usuário pedir um plano ou abordagem, ou antes de tarefas com várias etapas, vários arquivos ou risco de quebra. Não implementa por conta própria.
 ---
 
 # Task Planning

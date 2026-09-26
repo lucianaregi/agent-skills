@@ -25,7 +25,7 @@ skills/
     └── SKILL.md
 ```
 
-O `SKILL.md` começa com um frontmatter YAML contendo `name` e `description`, seguido das instruções em Markdown. O conteúdo varia conforme a skill e inclui seções como propósito, princípios, roteiro ou checklist e o que evitar.
+O `SKILL.md` começa com um frontmatter YAML contendo `name` e `description`, seguido das instruções em Markdown. O corpo abre dizendo se a skill apenas relata ou se altera arquivos, traz as regras e o procedimento ou os pontos a verificar e termina com a seção **Concluído quando**. As skills de revisão também definem a escala de severidade e o formato da saída.
 
 ---
 
@@ -91,7 +91,7 @@ Os caminhos acima foram conferidos na documentação oficial em setembro de 2026
 
 - [Claude Code: Skills](https://code.claude.com/docs/en/skills)
 - [Claude: usando skills no app](https://support.claude.com/en/articles/12512180-using-skills-in-claude)
-- [OpenAI Codex: Skills](https://developers.openai.com/codex/skills)
+- [OpenAI Codex: Skills](https://learn.chatgpt.com/docs/build-skills)
 - [GitHub Copilot: About agent skills](https://docs.github.com/en/copilot/concepts/agents/about-agent-skills)
 - [Cursor: Skills](https://cursor.com/docs/context/skills)
 - [Google Antigravity: Skills](https://antigravity.google/docs/skills)
@@ -104,7 +104,9 @@ Ao adicionar novas skills a este repositório:
 
 1. Crie o diretório `skills/<nome-da-skill>/` com um `SKILL.md` cujo `name` seja idêntico ao nome do diretório (letras minúsculas, números e hífens).
 2. Escreva as instruções em **pt-BR**, mantendo termos técnicos em inglês quando for o uso corrente.
-3. Mantenha a skill **agnóstica** de projeto, empresa ou ferramenta.
+3. Defina o tipo da skill:
+   - **genérica**: agnóstica de linguagem, framework e arquitetura, sem exemplos ou regras presos a uma stack;
+   - **específica de tecnologia**: pode assumir a stack correspondente, que deve estar explícita no `name` e na `description` (ex.: `dotnet-code-review`).
 4. Prefira diretrizes **pragmáticas**, objetivas e verificáveis.
 5. Adicione a skill à tabela [Skills Disponíveis](#-skills-disponíveis).
 
