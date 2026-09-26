@@ -108,7 +108,8 @@ Ao adicionar novas skills a este repositório:
    - **genérica**: agnóstica de linguagem, framework e arquitetura, sem exemplos ou regras presos a uma stack;
    - **específica de tecnologia**: pode assumir a stack correspondente, que deve estar explícita no `name` e na `description` (ex.: `dotnet-code-review`).
 4. Prefira diretrizes **pragmáticas**, objetivas e verificáveis.
-5. Adicione a skill à tabela [Skills Disponíveis](#-skills-disponíveis).
+5. Se a skill criar ou alterar artefatos, ela deve preservar a política de **autoria**: o agente não insere por iniciativa própria atribuição, assinatura, crédito ou identificação de si mesmo, nem indicação de conteúdo gerado por IA, salvo pedido do usuário ou regra explícita do projeto.
+6. Adicione a skill à tabela [Skills Disponíveis](#-skills-disponíveis).
 
 Pull requests que alteram `skills/` são validados automaticamente pelo [`skills-ref`](https://github.com/agentskills/agentskills/tree/main/skills-ref), o validador de referência da especificação Agent Skills ([workflow](.github/workflows/validate-skills.yml)).
 
