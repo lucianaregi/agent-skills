@@ -44,7 +44,7 @@ O `SKILL.md` começa com um frontmatter YAML contendo `name` e `description`, se
 | [`refactoring`](skills/refactoring/SKILL.md) | Refatorar código preservando o comportamento externo, com validação por testes. |
 | [`scope-check`](skills/scope-check/SKILL.md) | Identificar e conter alterações fora do escopo da tarefa (*scope creep*). |
 | [`security-review`](skills/security-review/SKILL.md) | Identificar riscos de segurança concretos: secrets no código, injeções, IDOR e configurações inseguras. |
-| [`task-planning`](skills/task-planning/SKILL.md) | Planejar tarefas técnicas antes de implementar: escopo, arquivos afetados, riscos e validação. |
+| [`task-planning`](skills/task-planning/SKILL.md) | Planejar tarefas técnicas antes de implementar (escopo, arquivos afetados, riscos e validação) e salvar no repositório o plano aprovado de implementações não triviais. |
 | [`technical-documentation`](skills/technical-documentation/SKILL.md) | Elaborar documentação técnica e ADRs fiéis ao código, declarando o que não pôde ser verificado. |
 | [`testing`](skills/testing/SKILL.md) | Criar e revisar testes focados em comportamento observável (AAA), evitando excesso de mocks e fragilidade. |
 
