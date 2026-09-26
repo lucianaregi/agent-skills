@@ -1,5 +1,5 @@
 ---
-name: readme
+name: readme-invalid
 description: Cria ou atualiza o README de um projeto com informações verificadas no próprio repositório, como propósito, pré-requisitos, instalação, execução, testes e uso. Use quando o usuário pedir para escrever, revisar ou atualizar um README. Para documentação de arquitetura, ADRs ou guias técnicos detalhados, use technical-documentation.
 ---
 
