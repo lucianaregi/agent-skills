@@ -39,6 +39,7 @@ O `SKILL.md` começa com um frontmatter YAML contendo `name` e `description`, se
 | [`dependency-review`](skills/dependency-review/SKILL.md) | Avaliar necessidade, manutenção, licença e segurança antes de adicionar, atualizar ou remover dependências. |
 | [`dotnet-code-review`](skills/dotnet-code-review/SKILL.md) | Revisar código C#/.NET com foco em bugs, async/await, injeção de dependência, nullability, recursos e performance. |
 | [`observability-review`](skills/observability-review/SKILL.md) | Verificar logs estruturados, níveis de log, correlation IDs, cardinalidade e vazamento de dados sensíveis. |
+| [`pr-creation`](skills/pr-creation/SKILL.md) | Criar pull requests fiéis às alterações da branch, com título e descrição baseados apenas no que mudou e nas validações de fato executadas. |
 | [`pr-review`](skills/pr-review/SKILL.md) | Revisar pull requests de forma holística: regressões, escopo, cobertura de testes e severidade dos achados. |
 | [`readme`](skills/readme/SKILL.md) | Criar e manter READMEs fiéis ao código real, com pré-requisitos e comandos exatos de execução. |
 | [`refactoring`](skills/refactoring/SKILL.md) | Refatorar código preservando o comportamento externo, com validação por testes. |
