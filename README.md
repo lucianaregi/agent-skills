@@ -110,6 +110,8 @@ Ao adicionar novas skills a este repositório:
 4. Prefira diretrizes **pragmáticas**, objetivas e verificáveis.
 5. Adicione a skill à tabela [Skills Disponíveis](#-skills-disponíveis).
 
+Pull requests que alteram `skills/` são validados automaticamente pelo [`skills-ref`](https://github.com/agentskills/agentskills/tree/main/skills-ref), o validador de referência da especificação Agent Skills ([workflow](.github/workflows/validate-skills.yml)).
+
 ---
 
 ## 📄 Licença
