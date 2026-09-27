@@ -33,10 +33,12 @@ O `SKILL.md` começa com um frontmatter YAML contendo `name` e `description`, se
 
 | Skill | Propósito |
 | :--- | :--- |
+| [`ai-integration`](skills/ai-integration/SKILL.md) | Orientar e revisar integrações com modelos de IA sem acoplamento desnecessário: provedores substituíveis, saída estruturada, custo, testes e avaliação de qualidade. |
 | [`api-review`](skills/api-review/SKILL.md) | Revisar contratos HTTP/REST, status codes, validação de payload e retrocompatibilidade. |
 | [`bug-fix`](skills/bug-fix/SKILL.md) | Investigar a causa raiz, reproduzir o erro com teste automatizado e corrigir com teste de regressão. |
 | [`commit`](skills/commit/SKILL.md) | Validar alterações de forma proporcional à mudança e criar commits na convenção do repositório (padrão: Conventional Commits em pt-BR). |
 | [`dependency-review`](skills/dependency-review/SKILL.md) | Avaliar necessidade, manutenção, licença e segurança antes de adicionar, atualizar ou remover dependências. |
+| [`dotnet-ai-integration`](skills/dotnet-ai-integration/SKILL.md) | Orientar e revisar integrações de IA em .NET com Microsoft.Extensions.AI: pipeline, telemetria sem conteúdo sensível, testes e adoção de frameworks de agentes. |
 | [`dotnet-code-review`](skills/dotnet-code-review/SKILL.md) | Revisar código C#/.NET com foco em bugs, async/await, injeção de dependência, nullability, recursos e performance. |
 | [`observability-review`](skills/observability-review/SKILL.md) | Verificar logs estruturados, níveis de log, correlation IDs, cardinalidade e vazamento de dados sensíveis. |
 | [`pr-creation`](skills/pr-creation/SKILL.md) | Criar pull requests fiéis às alterações da branch, com título e descrição baseados apenas no que mudou e nas validações de fato executadas. |
