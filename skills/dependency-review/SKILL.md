@@ -1,6 +1,6 @@
 ---
 name: dependency-review
-description: Avalia a adição, atualização ou remoção de dependências de terceiros, considerando necessidade, manutenção, licença, vulnerabilidades, impacto na árvore de dependências e breaking changes. Use quando o usuário pedir para adicionar, atualizar ou remover uma biblioteca ou pacote, ou quando um diff alterar manifestos ou lockfiles de dependências.
+description: Avalia a adição, atualização ou remoção de dependências de terceiros e a escolha entre recurso nativo, SDK oficial, abstração do ecossistema e biblioteca externa, considerando necessidade, benefício, acoplamento, sobreposição, manutenção, licença, vulnerabilidades, custo operacional e breaking changes. Use quando o usuário pedir para adicionar, atualizar ou remover uma biblioteca, SDK ou framework, escolher entre alternativas, ou quando um diff alterar manifestos ou lockfiles de dependências.
 ---
 
 # Dependency Review
@@ -15,11 +15,21 @@ Manutenção, licença, versões e vulnerabilidades devem vir de uma fonte consu
 
 ## Adição
 
-1. **Necessidade**: a biblioteca padrão, o framework ou uma dependência já presente resolve? Um código próprio curto e de baixo risco é preferível a uma dependência nova. Exceção: domínios com armadilhas conhecidas, como criptografia, parsing de formatos complexos, datas e fusos horários. Neles, preferir uma biblioteca consolidada.
-2. **Manutenção**: releases recentes, issues respondidas, compatibilidade com a versão da plataforma usada no projeto.
-3. **Licença**: compatível com a licença e o modelo de distribuição do projeto. Em caso de dúvida (ex.: copyleft em software distribuído), sinalizar para decisão humana.
-4. **Vulnerabilidades** conhecidas na versão escolhida.
-5. **Impacto**: dependências transitivas que entram junto e tamanho do artefato, quando isso importa (ex.: frontend, mobile).
+1. **Necessidade**: uma dependência já presente no projeto resolve? Um código próprio curto e de baixo risco é preferível a uma dependência nova. Exceção: domínios com armadilhas conhecidas, como criptografia, parsing de formatos complexos, datas e fusos horários. Neles, preferir uma biblioteca consolidada.
+2. **Ordem de preferência**, quando pertinente:
+   1. recurso nativo da linguagem ou da plataforma;
+   2. SDK oficial do serviço ou fornecedor integrado;
+   3. abstração oficial do ecossistema;
+   4. dependência externa.
+
+   SDK oficial de um fornecedor não é abstração oficial do ecossistema: ele prende o código àquele fornecedor. Quando o projeto precisa trocar ou combinar fornecedores, preferir a abstração do ecossistema, com o SDK por trás dela na infraestrutura.
+3. **Benefício concreto**: o que a dependência entrega que as opções anteriores não entregam. Sem benefício demonstrável, não adicionar.
+4. **Sobreposição**: já existe dependência ou framework que resolve o mesmo problema? Evitar duas soluções para o mesmo fim.
+5. **Acoplamento**: quanto do código passa a depender dos tipos da biblioteca. Preferir que ela fique restrita à infraestrutura, sem chegar ao domínio e aos casos de uso.
+6. **Manutenção**: releases recentes, issues respondidas, compatibilidade com a versão da plataforma usada no projeto.
+7. **Licença**: compatível com a licença e o modelo de distribuição do projeto. Em caso de dúvida (ex.: copyleft em software distribuído), sinalizar para decisão humana.
+8. **Vulnerabilidades** conhecidas na versão escolhida.
+9. **Impacto**: dependências transitivas que entram junto; tamanho do artefato, quando isso importa (ex.: frontend, mobile); custo operacional, como serviços e chaves a gerenciar, atualizações frequentes e cobrança por uso.
 
 ## Atualização
 
@@ -38,7 +48,7 @@ Manutenção, licença, versões e vulnerabilidades devem vir de uma fonte consu
 ## Formato da saída
 
 - **Recomendação**: prosseguir, não prosseguir ou usar uma alternativa (indicar qual).
-- **Justificativa** por critério, em poucas linhas, com os itens não verificados marcados.
+- **Justificativa** por critério, em poucas linhas, com os itens não verificados marcados. Na adição, incluir o benefício concreto e por que as opções anteriores na ordem de preferência não bastam.
 - **Ações necessárias**: ajustes de código, migração, pontos de atenção.
 
 ## Concluído quando
