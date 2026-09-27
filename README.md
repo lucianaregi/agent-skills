@@ -38,6 +38,7 @@ O `SKILL.md` começa com um frontmatter YAML contendo `name` e `description`, se
 | [`commit`](skills/commit/SKILL.md) | Validar alterações de forma proporcional à mudança e criar commits na convenção do repositório (padrão: Conventional Commits em pt-BR). |
 | [`dependency-review`](skills/dependency-review/SKILL.md) | Avaliar necessidade, manutenção, licença e segurança antes de adicionar, atualizar ou remover dependências. |
 | [`dotnet-code-review`](skills/dotnet-code-review/SKILL.md) | Revisar código C#/.NET com foco em bugs, async/await, injeção de dependência, nullability, recursos e performance. |
+| [`github-actions-review`](skills/github-actions-review/SKILL.md) | Revisar workflows de GitHub Actions: permissões, secrets, supply chain, gatilhos de PR, deploy e checks obrigatórios. |
 | [`observability-review`](skills/observability-review/SKILL.md) | Verificar logs estruturados, níveis de log, correlation IDs, cardinalidade e vazamento de dados sensíveis. |
 | [`pr-creation`](skills/pr-creation/SKILL.md) | Criar pull requests fiéis às alterações da branch, com título e descrição baseados apenas no que mudou e nas validações de fato executadas. |
 | [`pr-review`](skills/pr-review/SKILL.md) | Revisar pull requests de forma holística: regressões, escopo, cobertura de testes e severidade dos achados. |
