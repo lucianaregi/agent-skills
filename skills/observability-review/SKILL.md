@@ -21,7 +21,7 @@ Apenas relata. Avaliar com base nas bibliotecas e na infraestrutura de telemetri
 - **Dados e conteúdo sensíveis**: nunca aparecem em logs, atributos de métricas ou spans:
   - credenciais, secrets, tokens de autenticação, senhas e links assinados;
   - dados pessoais (ex.: CPF), dados de cartão e de saúde;
-  - conteúdo: documentos (ex.: currículos), áudio, transcrições, prompts, respostas de modelos e payloads de ferramentas (ex.: MCP).
+  - conteúdo: documentos enviados pelos usuários, áudio, transcrições, prompts, respostas de modelos e payloads de ferramentas (ex.: MCP).
 
   Atenção a objetos inteiros serializados no log e a mensagens de exceção que carregam o conteúdo processado.
 - **Metadados em vez de conteúdo**: registrar identificadores, tipo, tamanho, duração, resultado, modelo e versão usados, contagem de tokens do modelo e custo. A contagem de tokens do modelo é telemetria legítima; tokens de autenticação nunca são registrados.
