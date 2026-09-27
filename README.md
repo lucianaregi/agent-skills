@@ -38,6 +38,8 @@ O `SKILL.md` começa com um frontmatter YAML contendo `name` e `description`, se
 | [`commit`](skills/commit/SKILL.md) | Validar alterações de forma proporcional à mudança e criar commits na convenção do repositório (padrão: Conventional Commits em pt-BR). |
 | [`dependency-review`](skills/dependency-review/SKILL.md) | Avaliar necessidade, manutenção, licença e segurança antes de adicionar, atualizar ou remover dependências. |
 | [`dotnet-code-review`](skills/dotnet-code-review/SKILL.md) | Revisar código C#/.NET com foco em bugs, async/await, injeção de dependência, nullability, recursos e performance. |
+| [`dotnet-mcp-server`](skills/dotnet-mcp-server/SKILL.md) | Orientar e revisar servidores MCP em .NET com o SDK oficial em C# e ASP.NET Core: registro, autorização por ferramenta, hosting e validação de host. |
+| [`mcp-server`](skills/mcp-server/SKILL.md) | Orientar e revisar servidores MCP: primitivas, exposição mínima, autorização por ferramenta, transporte, estado, hosting e versões do protocolo. |
 | [`observability-review`](skills/observability-review/SKILL.md) | Verificar logs estruturados, níveis de log, correlation IDs, cardinalidade e vazamento de dados sensíveis. |
 | [`pr-creation`](skills/pr-creation/SKILL.md) | Criar pull requests fiéis às alterações da branch, com título e descrição baseados apenas no que mudou e nas validações de fato executadas. |
 | [`pr-review`](skills/pr-review/SKILL.md) | Revisar pull requests de forma holística: regressões, escopo, cobertura de testes e severidade dos achados. |
